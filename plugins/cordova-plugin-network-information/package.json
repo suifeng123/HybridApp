@@ -1,0 +1,85 @@
+{
+  "_from": "cordova-plugin-network-information@~1.2.0",
+  "_id": "cordova-plugin-network-information@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha1-H9e3KvBmJBW5VcV2OPe3dnyEPZg=",
+  "_location": "/cordova-plugin-network-information",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-network-information@~1.2.0",
+    "name": "cordova-plugin-network-information",
+    "escapedName": "cordova-plugin-network-information",
+    "rawSpec": "~1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.2.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-network-information/download/cordova-plugin-network-information-1.2.1.tgz",
+  "_shasum": "1fd7b72af0662415b955c57638f7b7767c843d98",
+  "_spec": "cordova-plugin-network-information@~1.2.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-network-information/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-network-information",
+    "platforms": [
+      "firefoxos",
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "tizen",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Network Information Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-network-information#readme",
+  "keywords": [
+    "cordova",
+    "network",
+    "information",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-tizen",
+    "cordova-browser"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-network-information",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-network-information.git"
+  },
+  "scripts": {
+    "jshint": "jshint www && jshint src && jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.2.1"
+}

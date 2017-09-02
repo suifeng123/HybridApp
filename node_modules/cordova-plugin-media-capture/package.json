@@ -1,0 +1,75 @@
+{
+  "_from": "cordova-plugin-media-capture@~1.2.0",
+  "_id": "cordova-plugin-media-capture@1.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-tktdtWP6i6FwUrzkTExe7XcSGes=",
+  "_location": "/cordova-plugin-media-capture",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-media-capture@~1.2.0",
+    "name": "cordova-plugin-media-capture",
+    "escapedName": "cordova-plugin-media-capture",
+    "rawSpec": "~1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.2.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-media-capture/download/cordova-plugin-media-capture-1.2.0.tgz",
+  "_shasum": "b64b5db563fa8ba17052bce44c4c5eed771219eb",
+  "_spec": "cordova-plugin-media-capture@~1.2.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-media-capture/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-media-capture",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Media Capture Plugin",
+  "homepage": "https://github.com/apache/cordova-plugin-media-capture#readme",
+  "keywords": [
+    "cordova",
+    "media",
+    "capture",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-media-capture",
+  "peerDependencies": {
+    "cordova-plugin-file": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-media-capture.git"
+  },
+  "version": "1.2.0"
+}

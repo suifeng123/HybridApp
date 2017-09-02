@@ -1,0 +1,78 @@
+{
+  "_from": "cordova-plugin-battery-status@~1.1.1",
+  "_id": "cordova-plugin-battery-status@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha1-QZIcdKvA2z431i88XcT94MYQkOQ=",
+  "_location": "/cordova-plugin-battery-status",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-battery-status@~1.1.1",
+    "name": "cordova-plugin-battery-status",
+    "escapedName": "cordova-plugin-battery-status",
+    "rawSpec": "~1.1.1",
+    "saveSpec": null,
+    "fetchSpec": "~1.1.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-battery-status/download/cordova-plugin-battery-status-1.1.2.tgz",
+  "_shasum": "41921c74abc0db3e37d62f3c5dc4fde0c61090e4",
+  "_spec": "cordova-plugin-battery-status@~1.1.1",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-battery-status/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-battery-status",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "tizen",
+      "firefoxos"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Battery Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-battery-status#readme",
+  "keywords": [
+    "cordova",
+    "battery",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-tizen",
+    "cordova-firefoxos"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-battery-status",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-battery-status.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.1.2"
+}

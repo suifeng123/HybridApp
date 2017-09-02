@@ -1,0 +1,82 @@
+{
+  "_from": "cordova-plugin-dialogs@~1.2.0",
+  "_id": "cordova-plugin-dialogs@1.2.1",
+  "_inBundle": false,
+  "_integrity": "sha1-dDvIrwB2oQp29VbFE0ClMBY9MVM=",
+  "_location": "/cordova-plugin-dialogs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-dialogs@~1.2.0",
+    "name": "cordova-plugin-dialogs",
+    "escapedName": "cordova-plugin-dialogs",
+    "rawSpec": "~1.2.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.2.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-dialogs/download/cordova-plugin-dialogs-1.2.1.tgz",
+  "_shasum": "743bc8af0076a10a76f556c51340a530163d3153",
+  "_spec": "cordova-plugin-dialogs@~1.2.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-dialogs/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-dialogs",
+    "platforms": [
+      "firefoxos",
+      "android",
+      "browser",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Notification Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-dialogs#readme",
+  "keywords": [
+    "cordova",
+    "notification",
+    "ecosystem:cordova",
+    "cordova-firefoxos",
+    "cordova-android",
+    "cordova-browser",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-dialogs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-dialogs.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.2.1"
+}

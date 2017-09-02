@@ -1,0 +1,88 @@
+{
+  "_from": "cordova-plugin-globalization@~1.0.3",
+  "_id": "cordova-plugin-globalization@1.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-uZQYSPtetdzWM+aXERj61jj2SM8=",
+  "_location": "/cordova-plugin-globalization",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-globalization@~1.0.3",
+    "name": "cordova-plugin-globalization",
+    "escapedName": "cordova-plugin-globalization",
+    "rawSpec": "~1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "~1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-globalization/download/cordova-plugin-globalization-1.0.7.tgz",
+  "_shasum": "b9941848fb5eb5dcd633e6971118fad638f648cf",
+  "_spec": "cordova-plugin-globalization@~1.0.3",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-globalization/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-globalization",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "firefoxos",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows",
+      "tizen",
+      "blackberry10"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Globalization Plugin",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-globalization#readme",
+  "keywords": [
+    "cordova",
+    "globalization",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-firefoxos",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows",
+    "cordova-tizen",
+    "cordova-blackberry10"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-globalization",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-globalization.git"
+  },
+  "scripts": {
+    "jshint": "jshint www && jshint src && jshint tests",
+    "test": "npm run jshint"
+  },
+  "types": "./types/index.d.ts",
+  "version": "1.0.7"
+}

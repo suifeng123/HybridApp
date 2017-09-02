@@ -1,0 +1,72 @@
+{
+  "_from": "cordova-plugin-contacts@~2.0.1",
+  "_id": "cordova-plugin-contacts@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-czw2mTj0deoFdmxhVVj3QSVphIk=",
+  "_location": "/cordova-plugin-contacts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-contacts@~2.0.1",
+    "name": "cordova-plugin-contacts",
+    "escapedName": "cordova-plugin-contacts",
+    "rawSpec": "~2.0.1",
+    "saveSpec": null,
+    "fetchSpec": "~2.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-contacts/download/cordova-plugin-contacts-2.0.1.tgz",
+  "_shasum": "733c369938f475ea05766c615558f74125698489",
+  "_spec": "cordova-plugin-contacts@~2.0.1",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-contacts/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-contacts",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp8",
+      "firefoxos",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Contacts Plugin",
+  "homepage": "https://github.com/apache/cordova-plugin-contacts#readme",
+  "keywords": [
+    "cordova",
+    "contacts",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-firefoxos",
+    "cordova-windows8",
+    "cordova-windows"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-contacts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-contacts.git"
+  },
+  "version": "2.0.1"
+}

@@ -1,0 +1,88 @@
+{
+  "_from": "cordova-plugin-file-transfer@~1.5.0",
+  "_id": "cordova-plugin-file-transfer@1.5.1",
+  "_inBundle": false,
+  "_integrity": "sha1-z5tjTo8yg0goAstfCzgdQPVGU5g=",
+  "_location": "/cordova-plugin-file-transfer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-file-transfer@~1.5.0",
+    "name": "cordova-plugin-file-transfer",
+    "escapedName": "cordova-plugin-file-transfer",
+    "rawSpec": "~1.5.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.5.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-file-transfer/download/cordova-plugin-file-transfer-1.5.1.tgz",
+  "_shasum": "cf9b634e8f3283482802cb5f0b381d40f5465398",
+  "_spec": "cordova-plugin-file-transfer@~1.5.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-file-transfer/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-file-transfer",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "blackberry10",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "firefoxos",
+      "browser"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova File Transfer Plugin",
+  "devDependencies": {
+    "jscs": "^2.6.0",
+    "jshint": "^2.8.0"
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-file-transfer#readme",
+  "keywords": [
+    "cordova",
+    "file",
+    "transfer",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-blackberry10",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-firefoxos",
+    "cordova-browser"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-file-transfer",
+  "peerDependencies": {
+    "cordova-plugin-file": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-file-transfer.git"
+  },
+  "scripts": {
+    "lint": "jshint www && jshint src && jshint tests",
+    "style": "jscs tests/tests.js",
+    "test": "npm run lint && npm run style"
+  },
+  "version": "1.5.1"
+}

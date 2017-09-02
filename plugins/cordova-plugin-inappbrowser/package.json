@@ -1,0 +1,80 @@
+{
+  "_from": "cordova-plugin-inappbrowser@~1.3.0",
+  "_id": "cordova-plugin-inappbrowser@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-FvAIUwC8mHFzPLH5qXeNLxT7YYc=",
+  "_location": "/cordova-plugin-inappbrowser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-inappbrowser@~1.3.0",
+    "name": "cordova-plugin-inappbrowser",
+    "escapedName": "cordova-plugin-inappbrowser",
+    "rawSpec": "~1.3.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.3.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-inappbrowser/download/cordova-plugin-inappbrowser-1.3.0.tgz",
+  "_shasum": "16f0085300bc9871733cb1f9a9778d2f14fb6187",
+  "_spec": "cordova-plugin-inappbrowser@~1.3.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-inappbrowser/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-inappbrowser",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "firefoxos"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova InAppBrowser Plugin",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.1.0"
+    }
+  ],
+  "homepage": "https://github.com/apache/cordova-plugin-inappbrowser#readme",
+  "keywords": [
+    "cordova",
+    "in",
+    "app",
+    "browser",
+    "inappbrowser",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-firefoxos"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-inappbrowser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-inappbrowser.git"
+  },
+  "version": "1.3.0"
+}

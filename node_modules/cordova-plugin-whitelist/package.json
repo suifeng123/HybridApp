@@ -1,0 +1,60 @@
+{
+  "_from": "cordova-plugin-whitelist@~1.2.1",
+  "_id": "cordova-plugin-whitelist@1.2.2",
+  "_inBundle": false,
+  "_integrity": "sha1-CFk/yVeIViCdQ3t2yLBHUp8Z9iM=",
+  "_location": "/cordova-plugin-whitelist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-whitelist@~1.2.1",
+    "name": "cordova-plugin-whitelist",
+    "escapedName": "cordova-plugin-whitelist",
+    "rawSpec": "~1.2.1",
+    "saveSpec": null,
+    "fetchSpec": "~1.2.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-whitelist/download/cordova-plugin-whitelist-1.2.2.tgz",
+  "_shasum": "08593fc9578856209d437b76c8b047529f19f623",
+  "_spec": "cordova-plugin-whitelist@~1.2.1",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-whitelist/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Whitelist Plugin",
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=4.0.0"
+    }
+  ],
+  "homepage": "https://github.com/apache/cordova-plugin-whitelist#readme",
+  "keywords": [
+    "cordova",
+    "whitelist",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-whitelist",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-whitelist.git"
+  },
+  "version": "1.2.2"
+}

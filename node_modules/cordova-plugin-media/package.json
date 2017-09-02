@@ -1,0 +1,76 @@
+{
+  "_from": "cordova-plugin-media@~2.2.0",
+  "_id": "cordova-plugin-media@2.2.0",
+  "_inBundle": false,
+  "_integrity": "sha1-3ij7BbwVxpaisxCzbEcP3WFtbEI=",
+  "_location": "/cordova-plugin-media",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-media@~2.2.0",
+    "name": "cordova-plugin-media",
+    "escapedName": "cordova-plugin-media",
+    "rawSpec": "~2.2.0",
+    "saveSpec": null,
+    "fetchSpec": "~2.2.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://r.cnpmjs.org/cordova-plugin-media/download/cordova-plugin-media-2.2.0.tgz",
+  "_shasum": "de28fb05bc15c696a2b310b36c470fdd616d6c42",
+  "_spec": "cordova-plugin-media@~2.2.0",
+  "_where": "D:\\web\\myphonegap\\node_modules",
+  "author": {
+    "name": "Apache Software Foundation"
+  },
+  "bugs": {
+    "url": "https://github.com/apache/cordova-plugin-media/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-media",
+    "platforms": [
+      "android",
+      "amazon-fireos",
+      "ubuntu",
+      "ios",
+      "blackberry10",
+      "wp7",
+      "wp8",
+      "windows8",
+      "windows",
+      "tizen"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova Media Plugin",
+  "homepage": "https://github.com/apache/cordova-plugin-media#readme",
+  "keywords": [
+    "cordova",
+    "media",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-amazon-fireos",
+    "cordova-ubuntu",
+    "cordova-ios",
+    "cordova-blackberry10",
+    "cordova-wp7",
+    "cordova-wp8",
+    "cordova-windows8",
+    "cordova-windows",
+    "cordova-tizen"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-media",
+  "peerDependencies": {
+    "cordova-plugin-file": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apache/cordova-plugin-media.git"
+  },
+  "version": "2.2.0"
+}

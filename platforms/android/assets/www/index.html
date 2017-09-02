@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width,initial-scale=1,minimum-scale=0.1,maximum-scale=1" />
+    <title>Currency Exchange android</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.mobile-1.0.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function (event) {
+            init();
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page" id="index">
+        <div class="exchangeRates">
+            <div class="header">
+                <div class="right">
+                    <a href="#setting" data-transition="slide">
+                        <img src="images/tm.gif" width="80" height="89" border="0"></a></div>
+            </div>
+            <div class="bg">
+                <!--汇率国家列表-->
+                <div class="list">
+                    <div class="currency">
+                        人民币</div>
+                    <div class="money">
+                        <input type="number" id="c1" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        美元</div>
+                    <div class="money strong">
+                        <input type="number" id="c2" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        日元</div>
+                    <div class="money strong">
+                        <input type="number" id="c3" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        里尔</div>
+                    <div class="money strong">
+                        <input type="number" id="c4" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        新加坡元</div>
+                    <div class="money strong">
+                        <input type="number" id="c5" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        欧元</div>
+                    <div class="money strong">
+                        <input type="number" id="c6" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        克朗</div>
+                    <div class="money strong">
+                        <input type="number" id="c7" maxlength="12" value="0" /></div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        英镑</div>
+                    <div class="money strong">
+                        <input type="number" id="c8" maxlength="12" value="0" /></div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="setting">
+        <div class="setRates">
+            <div class="header">
+                <div class="back">
+                    <a href="#" data-rel="back" id="backAndSave">
+                        <img src="images/tm.gif" width="93" height="54" border="0"></a></div>
+            </div>
+            <div class="bg">
+                <!--列表-->
+                <div class="list">
+                    <div class="currency w100">
+                        <span class="strong">100</span><span class="f25">美元</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r2" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">日元</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r3" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">里尔</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r4" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">新加坡元</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r5" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">欧元</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r6" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">克朗</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r7" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+                <div class="list">
+                    <div class="currency">
+                        <span class="strong">100</span><span class="f25">英镑</span></div>
+                    <div class="equal">
+                        =</div>
+                    <div class="setRates">
+                        <input type="number" id="r8" maxlength="8" value="1">
+                    </div>
+                    <div class="flagRight">
+                        人民币</div>
+                </div>
+            </div>
+            <div class="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
