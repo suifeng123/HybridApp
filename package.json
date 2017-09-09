@@ -31,6 +31,7 @@
         }
     },
     "dependencies": {
+        "axios": "^0.16.2",
         "cordova-android": "^6.2.3",
         "cordova-browser": "~4.1.0",
         "cordova-plugin-battery-status": "~1.1.1",
@@ -52,6 +53,8 @@
         "cordova-plugin-splashscreen": "~3.2.1",
         "cordova-plugin-statusbar": "~2.1.2",
         "cordova-plugin-vibration": "~2.1.0",
-        "cordova-plugin-whitelist": "~1.2.1"
+        "cordova-plugin-whitelist": "~1.2.1",
+        "element": "^0.1.4",
+        "element-ui": "^1.4.4"
     }
 }

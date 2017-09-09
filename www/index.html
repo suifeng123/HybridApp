@@ -3,7 +3,7 @@
 <head>
 <title>云音乐</title>
 <meta charset="UTF-8" />
-<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="js/element-ui/lib/theme-default/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 
 </head>
@@ -16,10 +16,18 @@
 </div>
 </body>
 <!--引入ajax请求的工具 -->
-<script type="text/javascript" src="js/axios.min.js"></script>
+<script type="text/javascript" src="js/axios/dist/axios.min.js"></script>
 <!--先引入 Vue的原文件 -->
-<script src="js/vue.js" type="text/javascript"></script>
+<script src="js/vue/dist/vue.js" type="text/javascript"></script>
 <!-- 引入路由文件 -->
-<script type="text/javascript" src="src/vue-router.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/vue-router/dist/vue-router.js"></script>
+<script type="text/javascript" src="js/element-ui/lib/index.js"></script>
+<script type="text/javascript">
+  new Vue({
+  	el:'#app',
+  	data: function(){
+  		return {visible:true}
+  	}
+  })
+</script>
 </html>

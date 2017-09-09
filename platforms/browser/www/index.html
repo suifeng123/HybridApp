@@ -1,156 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE>
+<html>
 <head>
-
-<title>指南针</title>
-<meta http-equiv="Content-Type" content="text/html; charset=GBK" />
-<link href="css/css.css" rel="stylesheet" type="text/css" />
-	
+<title>云音乐</title>
+<meta charset="UTF-8" />
+<link href="js/element-ui/lib/theme-default/index.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
-<script type="text/javascript" charset="utf-8">
 
-	var b=10,c=100,d=20,t=0,ang=0;drgNum=0;
-	var cv, ctx,prevAng = 0,currAng = 0;
-
-	var img = new Image();	
-	img.src = "images/znz_04.png";
-	
-	// watchID是当前'watchHeading'的引用
-	var watchID = null;
-		
-	document.addEventListener("backbutton", onBackKeyDown, false);
-	// 等待加载PhoneGap
-	document.addEventListener("deviceready", onDeviceReady, false);
-	//
-    function onDeviceReady() {
-   		//startWatch();
-        // Register the event listener
-        document.addEventListener("backbutton", onBackKeyDown, false);
-    }
-	// 开始监控指南针
-	function startWatch() {
-	
-		// 每半分钟更新一次数据
-		var options = { frequency: 10 };
-	
-		watchID = navigator.compass.watchHeading(onSuccess, onError, options);
-	}
-	
-	// 停止监控数据
-	function stopWatch() {
-		if (watchID) {
-			navigator.compass.clearWatch(watchID);
-			watchID = null;
-		}
-		var element = document.getElementById('heading');
-		element.innerHTML = '停止' + drgNum+'。';
-	}
-	
-	// onSuccess: 返回指南针的当前指向
-	function onSuccess(heading) {
-		var fangweiStr = "";
-		var element = document.getElementById('heading');
-		element.innerHTML = getPositonStr(360-heading)+'' + Math.round(heading)+'。';
-		setRotationFun((360-heading)*Math.PI/180);
-		drgNum = heading;
-	}
-	
-	// onError: 获取指南正朝向失败
-	function onError() {
-		alert('onError!获取指南针朝向失败');
-		stopWatch();
-	}
-
-	function getPositonStr(d){
-		var str = "北";
-		if(d>=340 && d<20 ){
-			str="北";
-		}
-		if(d<=340 && d>290){
-			str="东北";
-		}
-		if(d<=290 && d>250){
-			str="东";
-		}
-		if(d<=250 && d>200){
-			str="东南";
-		}
-		if(d<=200 && d>160){
-			str="南";
-		}
-		if(d<=160 && d>110){
-			str="西南";
-		}
-		if(d<=110 && d>70){
-			str="西";
-		}
-		if(d<=70 && d>20){
-			str="西北";
-		}
-		return str;
-	}
-
-	function setRotationFun(ang){
-		  //setRotationFun(ang*Math.PI/180); 
-		  cv = document.getElementById("compassImgDiv");
-		  ctx = cv.getContext("2d");
-		  cv.width = 355;
-		  cv.height = 355;
-		  ctx.save();
-		  ctx.translate(cv.width/2, cv.height/2);
-		  ctx.scale(1, 1);
-		  ctx.rotate(ang);
-		  ctx.drawImage(img, -355/2, -355/2);
-		  ctx.restore();
-	}
-	//¸ñÊ½»¯Êý×Ö£¬±£ÁônumÎ»Ð¡Êý
-	function formatNum(str,num){
-		var s = parseFloat(str);
-		if(!num) num=4;
-		if(isNaN(s)){
-			return;
-		}
-		s = s.toFixed(num);
-		if(s=="" || s<0) s=0;
-		return s;
-	}
-	
-    
-
-    // Handle the back button
-    //
-    function onBackKeyDown() {
-    	// ÏÔÊ¾È·ÈÏ¶Ô»°¿ò
-		navigator.notification.confirm(
-			'是否要推出指南针程序',  // ÏÔÊ¾ÐÅÏ¢
-			onConfirm,              // °´ÏÂ°´Å¥ºó´¥·¢µÄ»Øµ÷º¯Êý£¬·µ»Ø°´ÏÂ°´Å¥µÄË÷Òý
-			'退出程序',            // ±êÌâ
-			'确认,取消'          // °´Å¥±êÇ©
-		);
-    	
-    }
-    
-	// ´¦ÀíÈ·ÈÏ¶Ô»°¿ò·µ»ØµÄ½á¹û
-	function onConfirm(button) {
-		if(button == 1){
-			navigator.app.exitApp();
-		}
-	}
-	
-</script>
 </head>
 <body>
-<div class="all">
-	<div id="heading" class="top">单击开始</div>
-	<div class="middle">
-		<canvas id="compassImgDiv" class="dial"></canvas>
-	</div>
-	<div class="bottom">
-		<div class="start"><img src="images/tm.gif" width="198px" height="79" border="0"  onclick="startWatch();"></div>
-		<div class="kong"></div>
-		<div class="stop"><img src="images/tm.gif" width="198px" height="79" border="0" onclick="stopWatch();"></div>
-	</div>
-
+<div id="app">
+	<el-button @click="visible=true">按钮</el-button>
+	<el-dialog v-model="visible" title="Hello World">
+       <p>欢迎使用Element</p>
+	</el-dialog>
 </div>
 </body>
+<!--引入ajax请求的工具 -->
+<script type="text/javascript" src="js/axios/dist/axios.min.js"></script>
+<!--先引入 Vue的原文件 -->
+<script src="js/vue/dist/vue.js" type="text/javascript"></script>
+<!-- 引入路由文件 -->
+<script type="text/javascript" src="js/vue-router/dist/vue-router.js"></script>
+<script type="text/javascript" src="js/element-ui/lib/index.js"></script>
+<script type="text/javascript">
+  new Vue({
+  	el:'#app',
+  	data: function(){
+  		return {visible:true}
+  	}
+  })
+</script>
 </html>
