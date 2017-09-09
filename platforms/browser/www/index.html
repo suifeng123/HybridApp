@@ -3,31 +3,49 @@
 <head>
 <title>云音乐</title>
 <meta charset="UTF-8" />
-<link href="js/element-ui/lib/theme-default/index.css" rel="stylesheet" type="text/css" />
+<link href="js/mint-ui/lib/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/myindex.css" />
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+<!--引入ajax请求的工具 -->
+<script type="text/javascript" src="js/axios/dist/axios.min.js"></script>
+<!--先引入 Vue的原文件 -->
+<script  type="text/javascript" src="js/vue/dist/vue.js"></script>
+<!-- 引入路由文件 -->
+<script type="text/javascript" src="js/vue-router/dist/vue-router.js"></script>
+
+<script type="text/javascript" src="js/mint-ui/lib/index.js"></script>
+
 
 </head>
 <body>
 <div id="app">
-	<el-button @click="visible=true">按钮</el-button>
-	<el-dialog v-model="visible" title="Hello World">
-       <p>欢迎使用Element</p>
-	</el-dialog>
+<p>
+   <router-link to="/setting"></router-link>
+</p>
+ 
+<router-view></router-view>
 </div>
-</body>
-<!--引入ajax请求的工具 -->
-<script type="text/javascript" src="js/axios/dist/axios.min.js"></script>
-<!--先引入 Vue的原文件 -->
-<script src="js/vue/dist/vue.js" type="text/javascript"></script>
-<!-- 引入路由文件 -->
-<script type="text/javascript" src="js/vue-router/dist/vue-router.js"></script>
-<script type="text/javascript" src="js/element-ui/lib/index.js"></script>
 <script type="text/javascript">
-  new Vue({
-  	el:'#app',
-  	data: function(){
-  		return {visible:true}
-  	}
-  })
+//开始定义各个模块
+const Setting = {template:'<div>设置模块</div>'}
+const Friends = {template:'<div>朋友模块</div>'}
+const Music = {template:'<div>音乐模块</div>'}
+const Search = {template:'<div>搜索模块</div>'}
+
+//定义各个路由
+const routes = [
+ { path: '/setting',component: Setting },
+ { path: '/friends',component: Friends},
+ { path: '/music' , component: Music},
+ {path: '/search' , component: Search}
+]
+
+
+const router = new VueRouter({
+	routes
+})
+ const app = new Vue({router}).$mount('#app')
 </script>
+</body>
+
 </html>
