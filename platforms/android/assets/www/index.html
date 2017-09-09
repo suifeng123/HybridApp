@@ -15,27 +15,127 @@
 
 <script type="text/javascript" src="js/mint-ui/lib/index.js"></script>
 
+<!-- 引入一个转码工具 -->
+<script type="text/javascript" src="js/browser.js"></script>
+
 
 </head>
 <body>
 <div id="app">
-<p>
-   <router-link to="/setting"></router-link>
-</p>
- 
+
+   <mt-navbar>
+   <mt-tab-item id="1"><router-link to="/music">音乐</router-link></mt-tab-item>
+   <mt-tab-item id="2"><router-link to="/friends">朋友</router-link></mt-tab-item>
+   <mt-tab-item id="3">搜索</mt-tab-item>
+   </mt-navbar>
+
 <router-view></router-view>
 </div>
-<script type="text/javascript">
+</body>
+<template id="test-music">
+ <div>
+  <mt-cell title="本地音乐(34)"></mt-cell>
+  <mt-cell title="最近播放(100)"></mt-cell>
+  <mt-cell title="下载管理(1)"></mt-cell>
+  <mt-cell title="我的电台(0)"></mt-cell>
+  <mt-cell title="我的收藏(专辑/视频)"></mt-cell>
+  </div>
+</template>
+<!-- 整个朋友的模块 -->
+<template id="friends">
+<div>
+
+  <mt-navbar>
+     <mt-tab-item id="1"><router-link to="/friends/diantai">电台</router-link></mt-tab-item>
+    <mt-tab-item id="2"><router-link to="/friends/vedio">视频</router-link></mt-tab-item>
+    <mt-tab-item id="3">专辑</mt-tab-item>
+  </mt-navbar>
+
+  <router-view></router-view>
+  </div>
+</template>
+
+<!-- 朋友模块下面的电台模块 -->
+<template id="diantai">
+  <div>
+    <mt-button type="default">默认按钮</mt-button>
+    <mt-button type="primary">基本按钮</mt-button>
+    <mt-button type="danger">危险按钮</mt-button>
+  </div>
+</template>
+<!--朋友模块下面的视频模块 -->
+<template id="vedio">
+   <div>
+    <mt-spinner type="snake"></mt-spinner>
+    <mt-spinner type="double-bounce"></mt-spinner>
+    <mt-spinner type="triple-bounce"></mt-spinner>
+    <mt-spinner type="fading-circle"></mt-spinner>
+   </div>
+</template>
+
+<script>
 //开始定义各个模块
+const Music = Vue.component('Music',{
+	template:'#test-music',
+	 replace:true,
+	 props:{
+
+        },
+        data:function(){
+            return {
+                
+            }
+        },
+})
+// 设置friends 模块
+
 const Setting = {template:'<div>设置模块</div>'}
-const Friends = {template:'<div>朋友模块</div>'}
-const Music = {template:'<div>音乐模块</div>'}
+const Friends = Vue.component('Friends',{
+	template:'#friends',
+	replace: true,
+	data: function(){
+		return {}
+	}
+})
+//设置朋友模块下面另外另个模块
+const Diantai = Vue.component('Diantai',{
+	template:'#diantai',
+	replace: true,
+	data: function(){
+		return {}
+	}
+})
+//设置朋友模块下面的视频模块
+const Vedio = Vue.component('Vedio',{
+      template: '#vedio',
+      replace: true,
+      data: function(){
+      	return {}
+      }
+})
 const Search = {template:'<div>搜索模块</div>'}
 
 //定义各个路由
 const routes = [
+ {path:'/',component: Music},
  { path: '/setting',component: Setting },
- { path: '/friends',component: Friends},
+ {path:'/friends',redirect:'/friends/diantai'},
+ { 
+ 	path: '/friends',component: Friends,
+ 	//进行嵌套路由
+    children:[
+    
+   
+   {
+       path:'diantai',
+       component: Diantai
+   },
+   {
+   	  path:'vedio',
+   	  component: Vedio
+   },
+    ]
+},
  { path: '/music' , component: Music},
  {path: '/search' , component: Search}
 ]
@@ -46,6 +146,6 @@ const router = new VueRouter({
 })
  const app = new Vue({router}).$mount('#app')
 </script>
-</body>
+
 
 </html>
