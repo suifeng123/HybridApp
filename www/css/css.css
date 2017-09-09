@@ -1,0 +1,18 @@
+body { background-color:#b8b2b6; font-family: "黑体"; margin:0px; padding:0px; color:#2d1608;-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-user-select: none;}
+.all{width:480px; height:763px; margin:0 auto;}
+/*znz*/
+.all .top{width:480px; height:129px; background:url(../images/znz_01.png) no-repeat; text-align:center; font-size:80px; padding-top:50px;}
+.all .middle{width:417px; height:355px; background:url(../images/znz_02.png) no-repeat; padding-left:63px; }
+.all .middle .dial{width:355px; height:355px; background:url(../images/znz_04.png) no-repeat; }
+.all .bottom{width:451px; height:106px; background:url(../images/znz_03.png) no-repeat; padding-left:29px; padding-top:123px; }
+.all .bottom .start{ float:left; width:198px; height:79px; }
+.all .bottom .start a{ float:left; width:198px; height:79px; }
+.all .bottom .start a:hover{ float:left; width:198px; height:79px; background:url(../images/start.png) no-repeat; }
+.all .bottom .kong{ float:left; width:27px; height:79px; }
+.all .bottom .stop{ float:left; width:198px; height:79px; }
+.all .bottom .stop a{ float:left; width:198px; height:79px; }
+.all .bottom .stop a:hover{ float:left; width:198px; height:79px; background:url(../images/stop.png) no-repeat; }
+
+.efont{ font-family:Arial, Helvetica, sans-serif;}
+.bold{ font-weight:bold;}
